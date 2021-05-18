@@ -30,6 +30,11 @@ a:hover{
     font-size: large;
     text-decoration: none;
 }
+a:focus{
+    box-shadow: none;
+}
+
+
 /* HIGHLIGHT*/
 .myhighlight{
     background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFC300 50%);
@@ -180,7 +185,8 @@ nav{
 /*CV*/
 .myband{
     height: 200px;
-    background-color:#E4E4E4 ;
+    background-image: url('../img/gray-wall-textures-for-background.jpg');
+    background-size: cover;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -189,9 +195,10 @@ nav{
 /* COMPETENCES*/
 .myskillsImg{
     background-color:#EFEFEF ;
+    max-width: 200px;
 }
 .myskillsImg:hover{
-    width: 200px;
+    max-width: 200px;
     height: auto;
     background-color:#EFEFEF ;
     box-shadow: 12px 12px 2px 1px rgba(255, 195, 0, .7);
@@ -200,8 +207,6 @@ nav{
 .logoTools{
     max-width: 100px;
 }
-
-
 /* REALISATIONS*/
 .myrealisationLogo{
     width: 350px;
@@ -310,10 +315,10 @@ img {
 	text-decoration: none;
 }
 
-.portfolio-link h5, i{
-    font-weight: 300;
-    color: black;
+.portfolio-link h2{
+    font-family : 'Abhaya Libre';
 }
+
 /******************************MEDIA QUERIES********************/
 @media screen and (max-width: 800px) {
     .myTitle1{
